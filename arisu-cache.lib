@@ -9,7 +9,7 @@ F1 "Connector_Generic_Conn_01x01" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
- Connector*:*
+ Connector*:*_1x??_*
 $ENDFPLIST
 DRAW
 S -50 5 0 -5 1 1 6 N
@@ -113,9 +113,9 @@ $FPLIST
  D_*
 $ENDFPLIST
 DRAW
-P 2 0 1 8 -50 50 -50 -50 N
+P 2 0 1 10 -50 50 -50 -50 N
 P 2 0 1 0 50 0 -50 0 N
-P 4 0 1 8 50 50 50 -50 -50 0 50 50 N
+P 4 0 1 10 50 50 50 -50 -50 0 50 50 N
 X K 1 -150 0 100 R 50 50 1 1 P
 X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
@@ -138,14 +138,45 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MCU_Microchip_ATmega_ATmega32U4-AU
+# Mechanical_MountingHole
 #
-DEF MCU_Microchip_ATmega_ATmega32U4-AU U 0 20 Y Y 1 F N
+DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
+F0 "H" 0 200 50 H V C CNN
+F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*
+$ENDFPLIST
+DRAW
+C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# Switch_SW_Push
+#
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# arisu-rescue_ATmega32U4-AU-MCU_Microchip_ATmega
+#
+DEF arisu-rescue_ATmega32U4-AU-MCU_Microchip_ATmega U 0 20 Y Y 1 F N
 F0 "U" -500 1750 50 H V L BNN
-F1 "MCU_Microchip_ATmega_ATmega32U4-AU" 100 -1750 50 H V L TNN
+F1 "arisu-rescue_ATmega32U4-AU-MCU_Microchip_ATmega" 100 -1750 50 H V L TNN
 F2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
-ALIAS ATmega16U4RC-AU ATmega32U4-AU ATmega32U4RC-AU
 $FPLIST
  TQFP*10x10mm*P0.8mm*
 $ENDFPLIST
@@ -198,26 +229,11 @@ X PB1 9 600 1400 100 L 50 50 1 1 T
 ENDDRAW
 ENDDEF
 #
-# Mechanical_MountingHole
+# arisu-rescue_USBLC6-2SC6-Power_Protection
 #
-DEF Mechanical_MountingHole H 0 40 Y Y 1 F N
-F0 "H" 0 200 50 H V C CNN
-F1 "Mechanical_MountingHole" 0 125 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- MountingHole*
-$ENDFPLIST
-DRAW
-C 0 0 50 0 1 50 N
-ENDDRAW
-ENDDEF
-#
-# Power_Protection_USBLC6-2SC6
-#
-DEF Power_Protection_USBLC6-2SC6 U 0 0 Y Y 1 F N
+DEF arisu-rescue_USBLC6-2SC6-Power_Protection U 0 0 Y Y 1 F N
 F0 "U" 200 350 50 H V C CNN
-F1 "Power_Protection_USBLC6-2SC6" 400 -400 50 H V C CNN
+F1 "arisu-rescue_USBLC6-2SC6-Power_Protection" 400 -400 50 H V C CNN
 F2 "Package_TO_SOT_SMD:SOT-23-6" -750 400 50 H I C CNN
 F3 "" 200 350 50 H I C CNN
 $FPLIST
@@ -263,23 +279,6 @@ X IO1 6 -500 100 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_Push
-#
-DEF Switch_SW_Push SW 0 40 N N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "Switch_SW_Push" 0 -60 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
-DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
-ENDDRAW
-ENDDEF
-#
 # power_GND
 #
 DEF power_GND #PWR 0 0 Y Y 1 F P
@@ -301,8 +300,9 @@ F1 "power_VCC" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-C 0 75 25 0 1 0 N
-P 2 0 1 0 0 0 0 50 N
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
 X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF

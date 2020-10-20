@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:arisu-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32U4-AU U2
+L arisu-rescue:ATmega32U4-AU-MCU_Microchip_ATmega U2
 U 1 1 5C4B1F82
 P 4500 4250
 F 0 "U2" H 4900 2400 50  0000 C CNN
@@ -37,7 +36,7 @@ F 3 "~" H 1150 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Power_Protection:USBLC6-2SC6 U1
+L arisu-rescue:USBLC6-2SC6-Power_Protection U1
 U 1 1 5C4B2347
 P 1900 5650
 F 0 "U1" H 1900 6328 50  0000 C CNN
@@ -1192,16 +1191,6 @@ F 3 "~" H 8700 2900 50  0001 C CNN
 	1    8700 2900
 	1    0    0    -1  
 $EndComp
-Wire Bus Line
-	5750 2700 5750 3150
-Wire Bus Line
-	3550 700  3550 2100
-Wire Bus Line
-	5500 5350 5500 7400
-Wire Bus Line
-	6750 2750 6750 5800
-Wire Bus Line
-	7050 2650 7050 5800
 $Comp
 L Mechanical:MountingHole H3
 U 1 1 5C59C18D
@@ -1268,4 +1257,14 @@ F 3 "~" H 8700 4100 50  0001 C CNN
 	1    8700 4100
 	1    0    0    -1  
 $EndComp
+Wire Bus Line
+	5750 2700 5750 3150
+Wire Bus Line
+	3550 700  3550 2100
+Wire Bus Line
+	5500 5350 5500 7400
+Wire Bus Line
+	6750 2750 6750 5800
+Wire Bus Line
+	7050 2650 7050 5800
 $EndSCHEMATC
