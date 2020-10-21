@@ -1,10 +1,19 @@
 # Arisu Keyboard PCB with Modifications
-アリス PCB designed using KiCad. The layout is inspired by Lyn's EM7 and TGR Alice with some modification of my own.
+アリス PCB designed using KiCad. The layout was originally created by FateNozomi, inspired by Lyn's EM7 and TGR Alice with some modification.
 
-Key differences:
-- I removed the extra [B] key on the right half and shifted the [NM,.?] row to the left by 0.25U.
+Key differences of the original PCB:
+- Removed the extra [B] key on the right half and shifted the [NM,.?] row to the left by 0.25U.
 - Shifted the 3 keys to the right and added arrow keys.
 - Tweaked the bottom so that the 1.5U keys doesn't protrude out a little.
+
+Additional modifications to the file include:
+- Addition of stepped capslock position.
+- Addition of full backspace position, connected to switch 59 (row 0, column 13).
+(Both of these modifications will require a new 
+
+Additional work to come:
+- Replacing the mini-USB connector with USB-C.
+- Shifting the USB-C connector vertically, to reduce the distance to the edge of a case.
 
 Shifting the [NM,.?] row to the left by 0.25U required quite some work on the arrangement of keys for the right half.
 As a result, this does not give the same typing experience as Lyn's EM7 and TGR Alice.
