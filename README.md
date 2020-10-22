@@ -9,11 +9,10 @@ Key differences of the original PCB:
 Additional modifications to the file include:
 - Addition of stepped capslock position.
 - Addition of full backspace position, connected to switch 59 (row 0, column 13).
-(Both of these modifications will require a new 
-
-Additional work to come:
 - Replacing the mini-USB connector with USB-C.
 - Shifting the USB-C connector vertically, to reduce the distance to the edge of a case.
+
+(Note: The modifications for full backspace and stepped capslock require a modification to the plate file to use.)
 
 Shifting the [NM,.?] row to the left by 0.25U required quite some work on the arrangement of keys for the right half.
 As a result, this does not give the same typing experience as Lyn's EM7 and TGR Alice.
@@ -27,7 +26,7 @@ Disclaimer: Use these files at your own risk.
 ![アリス](https://i.redd.it/n80mvj5v7ji21.jpg)
 
 ## Gerber Files
-Download the gerber files under [releases](https://github.com/FateNozomi/arisu-pcb/releases).
+Download the gerber files under [releases](https://github.com/andygunn/arisu-pcb-mod/releases).
 
 ## Assembly
 For the components required, you may refer to the bill of materials included along with the release as reference or load up the design file in KiCad.
