@@ -1,6 +1,6 @@
 (fp_lib_table
   (lib (name arisu)(type KiCad)(uri ${KIPRJMOD}/arisu.pretty)(options "")(descr ""))
-  (lib (name USB_Type-C)(type KiCad)(uri ${FATE_PARTS}/USB_Type-C.pretty)(options "")(descr ""))
-  (lib (name MX_Switch)(type KiCad)(uri ${FATE_PARTS}/MX_Switch.pretty)(options "")(descr ""))
-  (lib (name Fate_Misc)(type KiCad)(uri ${FATE_PARTS}/Miscellaneous_Keyboard_Parts.pretty)(options "")(descr ""))
+  (lib (name Miscellaneous_Keyboard_Parts)(type KiCad)(uri ${KIPRJMOD}/Fate_Parts/Miscellaneous_Keyboard_Parts.pretty)(options "")(descr ""))
+  (lib (name MX_Switch)(type KiCad)(uri ${KIPRJMOD}/Fate_Parts/MX_Switch.pretty)(options "")(descr ""))
+  (lib (name USB_Type-C)(type KiCad)(uri ${KIPRJMOD}/Fate_Parts/USB_Type-C.pretty)(options "")(descr ""))
 )

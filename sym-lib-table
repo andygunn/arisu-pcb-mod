@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name arisu-rescue)(type Legacy)(uri ${KIPRJMOD}/arisu-rescue.lib)(options "")(descr ""))
+  (lib (name USB_Type-C)(type Legacy)(uri ${KIPRJMOD}/Fate_Parts/USB_Type-C.pretty/lib/USB_Type-C.lib)(options "")(descr ""))
 )
